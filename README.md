@@ -61,6 +61,8 @@ configureWebpack: config => {
 ```
 
 
-## 注意⚠️
+## 说明
 
-按需加载与全部引入是无法
+1. 全部引入代码分支 global-import
+2. 部分引入代码分支 part-import
+3. 只部分引入组件js部分 part-only-component
