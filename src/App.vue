@@ -1,19 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <deepexi-card title="这是标题">内容区域</deepexi-card>
+    <loading-button>hello world</loading-button>
+    <list-container v-model="value" :tabs="routes" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data() {
+    return {
+      value: "/dashboard/edit/info",
+      routes: [
+        {
+          label: "基本信息",
+          value: "/dashboard/edit/info"
+        },
+        {
+          label: "数据配置",
+          value: "/dashboard/edit/data"
+        },
+        {
+          label: "权限管理",
+          value: "/dashboard/edit/permission"
+        }
+      ]
+    };
+  },
+  components: {}
+};
 </script>
 
 <style>
@@ -24,5 +41,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: #2c3e50;
 }
 </style>

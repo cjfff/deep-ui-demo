@@ -1,0 +1,27 @@
+{
+    "presets": [
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "element-ui",
+                // 组件库 css 地址
+                "styleLibraryDirectory": "lib/theme-chalk"
+            },
+            "element-ui"
+        ],
+        // [
+        //     "import",
+        //     {
+        //         "libraryName": "deep-ui",
+        //         // css 代码的地址
+        //         "styleLibraryDirectory": "lib/theme-chalk",
+        //         // 组件库代码的地址: lib
+        //         "libraryDirectory": "src/components" 
+        //     },
+        //     "deep-ui"
+        // ]
+    ]
+}
