@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
-import DeepUi from 'deep-ui'
-import 'deep-ui/lib/theme-chalk/index'
+import { DeepexiCard, LoadingButton, ListContainer } from 'deep-ui'
 import { Button } from 'element-ui'
 
 Vue.use(Button)
-Vue.use(DeepUi)
+Vue.use(DeepexiCard)
+Vue.use(LoadingButton)
+Vue.use(ListContainer)
 
 Vue.config.productionTip = false
 
