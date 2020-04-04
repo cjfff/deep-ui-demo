@@ -17,7 +17,7 @@
             {
                 "libraryName": "deep-ui",
                 // css 代码的地址
-                "styleLibraryDirectory": "lib/theme-chalk",
+                // "styleLibraryDirectory": "lib/theme-chalk",
                 // 组件库代码的地址: lib
                 "libraryDirectory": "src/components" 
             },

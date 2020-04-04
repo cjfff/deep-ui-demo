@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import { DeepexiCard, LoadingButton, ListContainer } from 'deep-ui'
+import 'deep-ui/lib/theme-chalk/index'
 import { Button } from 'element-ui'
 
 Vue.use(Button)
